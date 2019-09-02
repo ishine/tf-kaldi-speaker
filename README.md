@@ -1,3 +1,7 @@
+Recently, I'm very busy with my PhD thesis so I can't udpate the code here. Since last commit some new experiments are conducted and multi-gpu is supported. I will commit the change once I finish the thesis writing (or hopefully when I got some spare time.) Thank you for watching this project.
+
+----
+
 # Overview
 
 The **tf-kaldi-speaker** implements a neural network based speaker verification system
@@ -93,7 +97,11 @@ Again, the backend classifier is integrated using Kaldi.
 
 	Training data: NIST SRE04-08, SWBD
 	
-	The SRE models are available upon request.
+	Only the models trained with large margin softmax are released at this moment.
+	
+	[Google Drive](https://drive.google.com/open?id=1yWE3yLiSsCSz-EPdUAstyozHWcgcThLQ) and
+	
+	[BaiduYunDisk](https://pan.baidu.com/s/1MVz7haYgozQ8ViJlII_YFw) (extraction code: rt9p)
 
 
 # Pros and cons
@@ -124,7 +132,7 @@ Deeper network is worth trying since we have enough training data.
 
 # Acknowledgements
 
-The computational resources are initially provided by Prof. Gales, and then mainly supported by Dr. Liang He.
+The computational resources are initially provided by Prof. Mark Gales in Cambridge University Engineering Department (CUED), and now mainly supported by Dr. Liang He in Tsinghua University Electronic Engineering Department (THUEE).
 
 
 # Last ...
@@ -155,4 +163,11 @@ After downloading the code, simply run:
 
 # Related papers
 
-I'm working on a paper describing the performance using this library. Will update soon.
+```
+@inproceedings{liu2019speaker,
+   author={Yi Liu and Liang He and Jia Liu},
+   Title = {Large Margin Softmax Loss for Speaker Verification},
+   BookTitle = {Proc. INTERSPEECH},
+   Year = {2019}
+}
+```
